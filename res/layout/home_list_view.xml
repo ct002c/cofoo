@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView android:id="@+id/restaurant"
+       	android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:paddingLeft="20dp"   
+	    android:textColor="#003366"
+	    android:text="@string/restaurant" />
+    
+     <TextView android:id="@+id/location"
+       	android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:paddingRight="20dp"   
+	    android:textColor="#003366"
+	    android:text="@string/location" />
+    
+    <ImageView
+        android:id="@+id/restaurant_photo"
+        android:layout_below="@id/restaurant"
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/rest_photo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+    
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_below="@id/restaurant_photo"
+        android:layout_alignLeft ="@+id/restaurant_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/user_photo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+    
+    <TextView android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurant_photo"
+        android:layout_toEndOf= "@+id/user_photo"
+        android:textColor="#003366"
+        android:text="@string/username" />
+        
+	<TextView android:id="@+id/time"
+	       	android:layout_alignParentRight="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_below="@id/restaurant_photo"
+		    android:paddingRight="20dp"   
+		    android:textColor="#003366"
+		    android:text="@string/time" />
+
+    
+</RelativeLayout>
